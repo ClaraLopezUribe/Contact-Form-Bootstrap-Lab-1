@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>Contact Form-Bootstrap Lab 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="/css/site.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container mt-5">
+        <h1 class="text-center text-light">Contact Me</h1>
+        <main class="border border-2 border-light shadow-lg bg-light p-2">
+            <form action="#">
+<!--In this form, are aria-labels redundant because they repeat exactly what the visual elements say?-->
+                <div class="row mb-1">
+                    <div class="col-6"> 
+                       <label class="form-label">First Name</label>
+                       <input type="text" name="firstName" class="form-control" placeholder="First Name" aria-label="First Name" required>
+                    </div>
+                    <div class="col-6">
+                       <label class="form-label">Last Name</label>
+                       <input type="text" name="lastName" class="form-control" placeholder="Last Name" aria-label="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="row mb-1">  
+                    <div class="col-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="email" required>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Phone (Optional)</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="Phone" aria-label="Phone Number">
+                    </div>
+                </div>
+                
+                <div class="row g-1 mb-1">
+                    <div class="col-12">
+                        <label class="form-label">Subject</label>
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea type="text" name="message" class="form-control" placeholder="Message" aria-label="Message" required></textarea>
+                    </div>
+                </div>
+                
+                <button type="button" name="button" class="btn btn-primary mt-2">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light sticky-footer">
+        <div class="container-fluid text-center">
+            <span class="text-muted me-1">Contact Form Bootstap Lab by Clara Lopez-Uribe</span>
+            <img src="img/favicon-32x32.png">
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
